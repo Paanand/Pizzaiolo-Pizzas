@@ -119,6 +119,10 @@ const pizzaList = {
     let selectedToppings = [];
     document.querySelectorAll(".btn-selected").forEach((element) => selectedToppings.push(element.innerHTML));
     chosenToppings = selectedToppings.sort();
+    if (showAnswerFlag==1){
+      showAnswerHighlight();
+    }
+
   }
   
   
@@ -136,7 +140,6 @@ const pizzaList = {
     }
     else if (this.id == "show-answer"){
       wrongFlag = 1;
-      showAnswerFlag = 1;  
       showAnswerHighlight();
       return
     }
@@ -144,12 +147,44 @@ const pizzaList = {
   }
   
   function showAnswerHighlight(){
-    let responseBox = document.querySelector('#check-response')
+
+   /* let responseBox = document.querySelector('#check-response')
     let correctAnswer =  pizzaList[currentPizza].toString();
     console.log(chosenToppings);
     responseBox.innerHTML = correctAnswer;
+    */
+  let correctAnswerArr = pizzaList[currentPizza];
+
+  if (showAnswerFlag == 0){
+  
     
+    correctAnswerArr.forEach( ingredient => {
+      let ingredientAnswer = document.createElement("div");
+      ingredientAnswer.innerHTML = ingredient;
+      ingredientAnswer.classList.add("check-response-answers");
+      ingredientAnswer.dataset.topping = ingredient;
+      document.querySelector("#check-response").appendChild(ingredientAnswer);
+      showAnswerFlag = 1;
+    })
   }
+  console.log(chosenToppings);
+  correctAnswerArr.forEach( item => {
+    let currentTopping = document.querySelector(`[data-topping = "${item}"]`);
+      if (chosenToppings.indexOf(item) > -1) {
+        if(currentTopping.classList.contains("check-red")) {
+          currentTopping.classList.remove("check-red")
+        }
+        currentTopping.classList.add("check-green");         
+      }
+      else if (chosenToppings.indexOf(item) == -1) {
+        if (currentTopping.classList.contains("check-green")) {
+          currentTopping.classList.remove("check-green");
+        }
+        currentTopping.classList.add("check-red");
+      }    
+    
+  })
+}
   
   function pizzaPrompt(){
     if (currentPizza == ""){
@@ -177,6 +212,7 @@ const pizzaList = {
       
     document.querySelector(".pizza-name").innerHTML = pizzaDisplayName;
     document.querySelector(".ingredient")
+    
   }
   
   //CHECK IF SELECTION MATCHES PIZZA
@@ -229,7 +265,9 @@ const pizzaList = {
     })
     //keep sauce cheese highlighted when resetting
     document.querySelectorAll(".staple-ingredient").forEach( ingredient => ingredient.classList.add('btn-selected'));  
+    chosenToppings = ["Mozzarella Cheese", "Tomato Sauce"];
     //reset show answer
+    
     document.querySelector("#check-response").innerHTML = "";
     showAnswerFlag = 0;
     
