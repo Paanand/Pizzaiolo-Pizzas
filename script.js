@@ -205,10 +205,10 @@ const pizzaList = {
     
   
     for (let i = 0; i < pizzaDisplayNameCap.length; i++) {
-        pizzaDisplayNameCap[i] = pizzaDisplayNameCap[i][0].toUpperCase() + pizzaDisplayNameCap[i].substr(1);
+        pizzaDisplayNameCap[i] = pizzaDisplayNameCap[i].toUpperCase();
   }
     
-    pizzaDisplayName = pizzaDisplayNameCap.toString().replace(/,/g, ' ');
+    pizzaDisplayName = pizzaDisplayNameCap.toString().replace(/,/g, '  ');
       
     document.querySelector(".pizza-name").innerHTML = pizzaDisplayName;
     document.querySelector(".ingredient")
@@ -288,7 +288,7 @@ const pizzaList = {
     else if (wrongFlag == 1){
       wrongFlag = 0;
     }
-    scoreLocation.innerHTML = "Correct: " + score;
+    scoreLocation.innerHTML = "CORRECT : " + score;
     
   }
   
@@ -302,7 +302,7 @@ const pizzaList = {
   
   function endScreen(){
     document.querySelector(".end-screen").style.display = "inline";
-    document.querySelector(".end-score").innerHTML =  score + " / " + totalQuestions + " PIZZAS CORRECT!";
+    document.querySelector(".end-score").innerHTML =  score + " OF " + totalQuestions + " PIZZAS CORRECT";
     
     document.querySelector('.reload').addEventListener("click", function(){
       location.reload();
