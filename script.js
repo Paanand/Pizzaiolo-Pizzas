@@ -19,7 +19,7 @@ const pizzaList = {
     sicilian: ["Bacon","Mozzarella Cheese","Red Onions","Sausage","Tomato Sauce"],
     soprano: ["Gorgonzola","Mozzarella Cheese","Soppressata","Sun Dried Tomatoes","Tomato Sauce"],
     thai_pie: ["BBQ Sauce","Chicken Breast","Mozzarella Cheese","Organic Fresh Mushrooms","Red Onions","Satay Sauce"],
-    godfather: ["Bacon","Mozzarella Cheese","Organic Fresh Mushrooms","Parmigiano","Pepperoni-Original","Sausage","Tomato Sauce"],
+    godfather: ["Bacon","Mozzarella Cheese","Parmigiano","Pepperoni-Original","Sausage","Tomato Sauce"],
     toni_pepperoni: ["Mozzarella Cheese","Pepperoni-Original","Tomato Sauce"],
     whole_wheat_meat: ["Mozzarella Cheese","Organic Fresh Mushrooms","Pepperoni-Original","Sausage","Tomato Sauce"],
     rapini: ["Chilli Flakes","Mozzarella Cheese","Olive Oil and Garlic","Parmigiano","Rapini"],
