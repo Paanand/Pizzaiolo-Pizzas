@@ -39,7 +39,7 @@ body {
   
   
   .topping-menu {
-    margin: 200px 5vw 0 5vw;
+    margin: 210px 5vw 0 5vw;
     font-size: 14px;
     background-color: #ebceb1;
     display: flex;
@@ -50,7 +50,7 @@ body {
   
   @media screen and (min-width: 900px) {
     .topping-menu {
-      margin: 200px 30vw 0 30vw;
+      margin: 210px 30vw 0 30vw;
     }
   }
   
