@@ -135,11 +135,8 @@ const pizzaList = {
       return
     }
     else if (this.id == "show-answer"){
-      let responseBox = document.querySelector('#check-response')
-      let correctAnswer =  pizzaList[currentPizza].toString();
-      responseBox.innerHTML = correctAnswer;
       wrongFlag = 1;
-      showAnswerFlag = 1;
+      showAnswerFlag = 1;  
       showAnswerHighlight();
       return
     }
@@ -147,9 +144,11 @@ const pizzaList = {
   }
   
   function showAnswerHighlight(){
-    if (showAnswerFlag == 1){
-      
-    }
+    let responseBox = document.querySelector('#check-response')
+    let correctAnswer =  pizzaList[currentPizza].toString();
+    console.log(chosenToppings);
+    responseBox.innerHTML = correctAnswer;
+    
   }
   
   function pizzaPrompt(){
