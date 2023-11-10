@@ -34,10 +34,11 @@ const pizzaList = {
     primavera: ["Extra-Virgin Olive Oil","Mozzarella Cheese","Parmigiano","Roasted Red Peppers","Tomatoes Herbed","Zucchini"],
     sofia: ["Mozzarella Cheese","Tomato Sauce"],
     spinotta: ["Extra-Virgin Olive Oil","Mozzarella Cheese","Parmigiano","Ricotta","Spinach","Tomatoes Herbed"],
-    sonny_like_it_hot: ["Hot Banana Peppers","Mozzarella Cheese","Jalapeno Peppers","Tomato Sauce","Tomatoes Herbed"],
+    sonny_like_it_hot: ["Hot Banana Peppers","Jalapeno Peppers","Mozzarella Cheese","Tomato Sauce","Tomatoes Herbed"],
     veggie_lover: ["Green Peppers","Mozzarella Cheese","Organic Fresh Mushrooms","Spinach","Tomato Sauce","Tomatoes Herbed"],
     fredo:  ["Extra-Virgin Olive Oil","Oregano","Potatoes","Rosemary","Sea Salt"],
-    garlic_bread_with_cheese: ["Mozzarella Cheese","Olive Oil and Garlic","Parmigiano","Parsley"]
+    garlic_bread_with_cheese: ["Mozzarella Cheese","Olive Oil and Garlic","Parmigiano","Parsley"],
+    plantayolo: ["Mozzarella Cheese", "Plant-Based Peppi","Plant-Based Sausage Crumble", "Tomato Sauce"]
   }
   
   const pizzaArr = Object.keys(pizzaList);
@@ -48,7 +49,7 @@ const pizzaList = {
     meats: ["Anchovies", "Bacon", "Chicken Breast", "Ground Beef", "Halal Pepperoni", "Ham", "Pepperoni-Original", "Pepperoni Tiny Cup", "Sausage", "Shredded Pepperoni", "Soppressata"],
     vegetables: ["Artichokes","Black Olives","Broccoli","Cherry Tomatoes","Fresh Basil","Green Olives","Green Peppers","Hot Banana Peppers","Jalapeno Peppers","Kalamata Olives","Organic Fresh Mushrooms","Pineapple","Potatoes","Rapini","Red Onions", "Roasted Red Peppers", "Spinach", "Sun Dried Tomatoes","Tomatoes Herbed","Zucchini"],
     herbs: ["Chilli Flakes","Fresh Garlic","Oregano","Rosemary","Parsley", "Sea Salt"],
-    plantBased: ["Plant-based Peppi","Plant-based Sausage Crumble"]
+    plantBased: ["Plant-Based Peppi","Plant-Based Sausage Crumble"]
   }
   
   const toppingColors = {
