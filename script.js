@@ -37,7 +37,7 @@ const pizzaList = {
     sonny_like_it_hot: ["Hot Banana Peppers","Mozzarella Cheese","Roasted Red Peppers","Tomato Sauce","Tomatoes Herbed"],
     veggie_lover: ["Green Peppers","Mozzarella Cheese","Organic Fresh Mushrooms","Spinach","Tomato Sauce","Tomatoes Herbed"],
     fredo:  ["Extra-Virgin Olive Oil","Oregano","Potatoes","Rosemary","Sea Salt"],
-    garlic_bread_with_cheese: ["Mozzrella Cheese","Olive Oil and Garlic","Parmigiano","Parsley"]
+    garlic_bread_with_cheese: ["Mozzarella Cheese","Olive Oil and Garlic","Parmigiano","Parsley"]
   }
   
   const pizzaArr = Object.keys(pizzaList);
