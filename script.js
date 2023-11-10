@@ -34,7 +34,7 @@ const pizzaList = {
     primavera: ["Extra-Virgin Olive Oil","Mozzarella Cheese","Parmigiano","Roasted Red Peppers","Tomatoes Herbed","Zucchini"],
     sofia: ["Mozzarella Cheese","Tomato Sauce"],
     spinotta: ["Extra-Virgin Olive Oil","Mozzarella Cheese","Parmigiano","Ricotta","Spinach","Tomatoes Herbed"],
-    sonny_like_it_hot: ["Hot Banana Peppers","Mozzarella Cheese","Roasted Red Peppers","Tomato Sauce","Tomatoes Herbed"],
+    sonny_like_it_hot: ["Hot Banana Peppers","Mozzarella Cheese","Jalapeno Peppers","Tomato Sauce","Tomatoes Herbed"],
     veggie_lover: ["Green Peppers","Mozzarella Cheese","Organic Fresh Mushrooms","Spinach","Tomato Sauce","Tomatoes Herbed"],
     fredo:  ["Extra-Virgin Olive Oil","Oregano","Potatoes","Rosemary","Sea Salt"],
     garlic_bread_with_cheese: ["Mozzarella Cheese","Olive Oil and Garlic","Parmigiano","Parsley"]
