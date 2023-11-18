@@ -27,7 +27,7 @@ const pizzaList = {
     margherita: ["Fresh Basil","Mozzarella Cheese","Tomato Sauce"],
     bianca: ["Artichokes","Extra-Virgin Olive Oil","Feta","Mozzarella Cheese","Parmigiano","Zucchini"],
     bomba: ["Feta","Gorgonzola","Mozzarella Cheese","Parmigiano","Tomato Sauce"],
-    capri: ["Goat Cheese","Mozzarella Cheese","Organic Fresh Mushrooms","Pesto","Roasted Red Peppers","Tomato Sauce"],
+    capri: ["Goat Cheese","Mozzarella Cheese","Pesto","Roasted Red Peppers","Tomato Sauce"],
     casino: ["Black Olives","Green Olives","Mozzarella Cheese","Roasted Red Peppers","Tomato Sauce"],
     diana: ["Organic Fresh Mushrooms","Pesto","Roasted Red Peppers","Tomatoes Herbed","Zucchini"],
     mediterranean: ["Black Olives","Feta","Green Peppers","Mozzarella Cheese","Tomato Sauce","Tomatoes Herbed"],
